@@ -21,7 +21,6 @@ const Counter = ({ value, increment }) => (
         title='+'
         color='#2196F3'
       />
-      <Text> </Text>
       <Button
         onPress={onButtonPress}
         title='-'
