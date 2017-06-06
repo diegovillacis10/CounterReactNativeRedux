@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 
-import app from './src/reducers';
+import app from './reducers';
 
 const configureStore = () => createStore(app)
 
