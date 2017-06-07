@@ -1,4 +1,4 @@
-import { increment, decrement } from '../../src/actions'
+import { increment, decrement, reset } from '../../src/actions'
 import reducer from '../../src/reducers'
 
 describe('reducer', () => {
@@ -17,6 +17,12 @@ describe('reducer', () => {
   it('should decrement state by 1', () => {
     expect(
       reducer(1, decrement())
+    ).toEqual(0)
+  })
+
+  it('should reset to 0', () => {
+    expect(
+      reducer(5, reset())
     ).toEqual(0)
   })
 })
