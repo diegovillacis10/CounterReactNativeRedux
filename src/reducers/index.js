@@ -1,10 +1,14 @@
-import { INCREMENT } from '../actionTypes';
+import { INCREMENT, DECREMENT } from '../actionTypes';
 
 const reducer = (state = 0, action) => {
-  if (action.type === INCREMENT) {
-    return state + 1;
+  switch (action.type) {
+    case INCREMENT:
+      return state + 1;
+    case DECREMENT:
+      return state - 1;
+    default:
+      return state;
   }
-  return state;
 }
 
 export default reducer;

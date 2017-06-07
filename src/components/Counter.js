@@ -6,7 +6,7 @@ const onButtonPress = () => {
   Alert.alert('Button has been pressed!');
 };
 
-const Counter = ({ value, increment }) => (
+const Counter = ({ value, increment, decrement }) => (
   <View style={{
     flex: 1,
     flexDirection: 'column',
@@ -22,7 +22,7 @@ const Counter = ({ value, increment }) => (
         color='#2196F3'
       />
       <Button
-        onPress={onButtonPress}
+        onPress={ decrement }
         title='-'
         color='#2196F3'
       />
